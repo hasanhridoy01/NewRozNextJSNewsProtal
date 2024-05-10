@@ -70,6 +70,9 @@ const Navbar = () => {
                     sx={{
                       marginRight: "10px",
                       backgroundColor: activeButton === index ? "#ef4444" : "",
+                      "&:hover": { 
+                        backgroundColor: '#2CC506'
+                      }
                     }}
                     onClick={() => handleButtonClick(index)}
                   >

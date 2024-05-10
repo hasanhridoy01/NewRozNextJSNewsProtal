@@ -39,10 +39,23 @@ const LatestNews = () => {
         </CardContent>
         <CardActions>{/* Actions for the card */}</CardActions>
       </Card>
-      <Grid className="my-5" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
+      <Grid
+        className="my-5"
+        container
+        rowSpacing={1}
+        columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+      >
         <Grid item xs={6}>
-          <Card>
-            <CardMedia className="my-2">
+          <Card sx={{ overflow: 'hidden' }}>
+            <CardMedia
+              className="my-2"
+              sx={{
+                "&:hover": {
+                  transform: "scale(1.03)",
+                  transition: "transform 0.5s ease-in-out",
+                },
+              }}
+            >
               <Image className="mx-auto" src={topNews2} alt="top news" />
             </CardMedia>
             <CardContent>

@@ -50,6 +50,7 @@ const LatestNews = () => {
             <CardMedia
               className="my-2"
               sx={{
+                overflow: 'hidden',
                 "&:hover": {
                   transform: "scale(1.03)",
                   transition: "transform 0.5s ease-in-out",
